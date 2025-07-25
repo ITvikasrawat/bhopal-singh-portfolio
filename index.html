@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="teal">
+<html lang="en" data-theme="purple">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     let currentMode = localStorage.getItem('themeMode') || 'light';
-    let currentColor = localStorage.getItem('themeColor') || 'teal';
+    let currentColor = localStorage.getItem('themeColor') || 'purple';
     applyTheme(currentMode, currentColor);
 
     modeCycleBtn.addEventListener('click', (e) => { e.stopPropagation(); currentMode = themeModes[(themeModes.indexOf(currentMode) + 1) % themeModes.length]; localStorage.setItem('themeMode', currentMode); applyTheme(currentMode, currentColor); });
